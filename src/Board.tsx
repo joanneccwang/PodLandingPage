@@ -1,4 +1,5 @@
 import Heading from '@components/Heading';
+import SourceList from '@components/SourceList';
 
 import mq from './breakpoints';
 
@@ -8,7 +9,7 @@ function Board() {
       css={(theme) =>
         mq({
           position: 'absolute',
-          margin: '40px',
+          margin: ['24px', '40px', '40px'],
           top: ['175px', '258px', '165px'],
           maxWidth: ['100%', '625px', '723px'],
           backgroundColor: [
@@ -33,6 +34,7 @@ function Board() {
         podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
         more!
       </p>
+      <SourceList></SourceList>
     </section>
   );
 }
