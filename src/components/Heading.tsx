@@ -8,6 +8,7 @@ function Heading() {
           mq({
             color: theme.colors.green,
             fontSize: ['26px', '48px', '52px'],
+            textAlign: ['center', 'left', 'left'],
           })
         }
       >
@@ -18,6 +19,7 @@ function Heading() {
           mq({
             color: theme.colors.white,
             fontSize: ['26px', '48px', '52px'],
+            textAlign: ['center', 'left', 'left'],
           })
         }
       >
