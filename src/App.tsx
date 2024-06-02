@@ -1,7 +1,7 @@
 import './App.css';
 
 function App() {
-  return <>HELLO</>;
+  return <div css={{ fontSize: '50px', color: 'hotpink' }}>HELLO</div>;
 }
 
 export default App;
