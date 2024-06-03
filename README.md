@@ -1,30 +1,72 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Pod request access landing page solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Pod request access landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pod-request-access-landing-page-eyTmdkLSG). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### The challenge
 
-- Configure the top-level `parserOptions` property like this:
+Users should be able to:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
+- Receive an error message when the form is submitted if:
+  - The `Email address` field is empty should show "Oops! Please add your email"
+  - The email is not formatted correctly should show "Oops! Please check your email"
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://joanneccwang.github.io/PodLandingPage)
+
+## My process
+
+### Built with
+
+- React
+- Vite
+- [Emotion](https://emotion.sh/docs/introduction), a CSS in JS library
+
+### What I learned
+
+In this project, I used the CSSInJS library Emotion.
+
+It is very intuitive for me to be able to write css in React components. And with the help of the `facepaint` library, the syntax to handle RWD styling becomes so elegant.
+
+```jsx
+import facepaint from 'facepaint';
+const breakpoints = [450, 768];
+const mq = facepaint(breakpoints.map((bp) => `@media (min-width: ${bp}px)`));
+
+<section
+  css={(theme) =>
+    mq({
+      position: 'absolute',
+      margin: ['0px', '0px 40px', '40px 0px'],
+      padding: ['24px', '0px', '0px'],
+      left: ['0px', '0px', '165px'],})
+  }
+</section>
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Continued development
+
+[] throttle resize event listener
+[] smoother RWD layout on resizing
+[] bug: sometimes the wrong background is applied on mount
+
+## Author
+
+- Website - [Joanne Wang](https://joanneccwang.github.io/resume)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
