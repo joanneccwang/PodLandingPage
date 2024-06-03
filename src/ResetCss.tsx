@@ -7,8 +7,7 @@ function ResetCSS() {
         ':root': {
           backgroundColor: theme.colors.black,
           color: theme.colors.green,
-          fontFamily:
-            'Chivo, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif',
+          fontFamily: theme.fontFamily,
           fontOpticalSizing: 'auto',
           fontStyle: 'normal',
           fontWeight: 400,
@@ -17,10 +16,26 @@ function ResetCSS() {
         'body, html': {
           margin: 0,
           padding: 0,
+          minHeight: '100vh',
+          minWidth: '100vw',
         },
 
         '*': {
           boxSizing: 'border-box',
+        },
+
+        'input, input:focus, input:focus-visible': {
+          border: 'none',
+          backgroundImage: 'none',
+          backgroundColor: 'none',
+          boxShadow: 'none',
+          outline: 'none',
+        },
+
+        button: {
+          border: 'none',
+          backgroundImage: 'none',
+          boxShadow: 'none',
         },
       })}
     ></Global>

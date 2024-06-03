@@ -1,4 +1,4 @@
-import mq from '@/breakpoints';
+import { mq } from '@utils/breakpoints';
 
 function Heading() {
   return (

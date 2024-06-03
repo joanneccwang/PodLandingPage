@@ -12,6 +12,18 @@ function CustomCss() {
           color: theme.colors.gray1,
           margin: 0,
         },
+
+        input: {
+          fontFamily: theme.fontFamily,
+        },
+
+        button: {
+          fontFamily: theme.fontFamily,
+        },
+
+        '#root': {
+          width: '100%',
+        },
       })}
     ></Global>
   );

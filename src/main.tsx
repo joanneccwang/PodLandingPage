@@ -16,6 +16,7 @@ const theme = {
     white: '#FFFFFF',
   },
   borderRadius: '28px',
+  fontFamily: 'Chivo, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif',
 };
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
