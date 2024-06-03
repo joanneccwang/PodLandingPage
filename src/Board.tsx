@@ -3,19 +3,24 @@ import SourceList from '@components/SourceList';
 import EmailRequest from '@components/EmailRequest';
 
 import { mq } from '@utils/breakpoints.ts';
-import useCheckMobile from '@hooks/useCheckMobile.ts';
+import useCheckDevice from '@hooks/useCheckDevice.ts';
 
 function Board() {
-  const { isMobile } = useCheckMobile();
+  const { isMobile } = useCheckDevice();
   return (
     <section
       css={(theme) =>
         mq({
-          border: '1px solid hotpink',
           position: 'absolute',
-          margin: ['0px', '40px', '40px'],
+          margin: ['0px', '0px 40px', '40px 0px'],
           padding: ['24px', '0px', '0px'],
-          top: ['175px', '258px', '165px'],
+          left: ['0px', '0px', '165px'],
+          top: '0px',
+          transform: [
+            'translateY(175px)',
+            'translateY(calc(50vh - 50%))',
+            'translateY(calc(50vh - 40%));',
+          ],
           width: '100%',
           maxWidth: ['100%', '625px', '723px'],
           backgroundColor: [

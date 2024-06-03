@@ -13,8 +13,9 @@ function SourceList() {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: ['space-between', 'flex-start', 'flex-start'],
-        columnGap: ['0px', '40px', '40px'],
+        columnGap: ['0px', '20px', '20px'],
         marginTop: ['33px', '64px', '64px'],
+        marginBottom: '24px',
       })}
     >
       {icons.map((icon, idx) => (
