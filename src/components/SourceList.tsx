@@ -12,8 +12,10 @@ function SourceList() {
       css={mq({
         display: 'flex',
         flexDirection: 'row',
+        flexWrap: 'wrap',
         justifyContent: ['space-between', 'flex-start', 'flex-start'],
         columnGap: ['0px', '20px', '20px'],
+        rowGap: ['4px'],
         marginTop: ['33px', '64px', '64px'],
         marginBottom: '24px',
       })}

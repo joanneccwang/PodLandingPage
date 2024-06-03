@@ -21,7 +21,7 @@ const useBreakPoints = () => {
 
   useEffect(() => {
     handleWindowSizeChange();
-  });
+  }, []);
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange);
