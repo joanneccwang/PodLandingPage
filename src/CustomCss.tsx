@@ -23,6 +23,7 @@ function CustomCss() {
 
         '#root': {
           width: '100%',
+          overflow: 'hidden',
         },
       })}
     ></Global>
