@@ -17,7 +17,7 @@ function EmailRequest() {
   };
   const handleSubmit = () => {
     const emailRegex = /[a-zA-Z0-9.]+@[a-zA-Z0-9.]+/g;
-    if (email.length === 0) {
+    if (email.trim().length === 0) {
       setErrorState({ isError: true, errorMsg: 'Oops! Please add your email' });
     } else if (!emailRegex.test(email)) {
       setErrorState({
