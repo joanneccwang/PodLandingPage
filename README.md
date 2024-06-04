@@ -40,7 +40,7 @@ Users should be able to:
 
 ### What I learned
 
-##### CSS in JS library: Emotion
+#### CSS in JS library: Emotion
 
 In this project, I used the CSS in JS library Emotion.
 
@@ -62,7 +62,7 @@ const mq = facepaint(breakpoints.map((bp) => `@media (min-width: ${bp}px)`));
 </section>
 ```
 
-##### Handle Responsive Image
+#### Handle Responsive Image
 
 Use `<picture>` tag with `<source>` to handle responsive image
 [Picture Element](https://web.dev/learn/design/picture-element?hl=zh-tw)
@@ -77,9 +77,9 @@ Use `<picture>` tag with `<source>` to handle responsive image
 
 ### Continued development
 
-[] throttle resize event listener
-[] smoother RWD layout on resizing
-[] bug: sometimes the wrong background is applied on mount
+- [] throttle resize event listener
+- [x] smoother RWD layout on resizing
+- [x] bug: sometimes the wrong background is applied on mount
 
 ## Author
 
