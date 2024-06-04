@@ -40,7 +40,9 @@ Users should be able to:
 
 ### What I learned
 
-In this project, I used the CSSInJS library Emotion.
+##### CSS in JS library: Emotion
+
+In this project, I used the CSS in JS library Emotion.
 
 It is very intuitive for me to be able to write css in React components. And with the help of the `facepaint` library, the syntax to handle RWD styling becomes so elegant.
 
@@ -58,6 +60,19 @@ const mq = facepaint(breakpoints.map((bp) => `@media (min-width: ${bp}px)`));
       left: ['0px', '0px', '165px'],})
   }
 </section>
+```
+
+##### Handle Responsive Image
+
+Use `<picture>` tag with `<source>` to handle responsive image
+[Picture Element](https://web.dev/learn/design/picture-element?hl=zh-tw)
+
+```html
+<picture>
+  <source media="(max-width: 450px)" srcset="{MobileBg}" />
+  <source media="(max-width: 768px)" srcset="{PadBg}" />
+  <img src="{DesktopBg}" alt="background image" />
+</picture>
 ```
 
 ### Continued development
