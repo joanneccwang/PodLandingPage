@@ -9,6 +9,7 @@ function Board() {
   const { isMobile } = useCheckDevice();
   return (
     <section
+      role='main'
       css={(theme) =>
         mq({
           position: 'absolute',
